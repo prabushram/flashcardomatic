@@ -1,0 +1,1 @@
+fileMock.js
