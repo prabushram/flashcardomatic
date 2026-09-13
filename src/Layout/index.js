@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import NotFound from "./NotFound";
+import Home from "./Home";
 import { Route, Routes } from "react-router-dom";
 
 function RoutePlaceholder({ title }) {
@@ -17,7 +18,7 @@ function Layout() {
       <Header />
       <div className="container">
         <Routes>
-          <Route path="/" element={<RoutePlaceholder title="Home" />} />
+          <Route path="/" element={<Home />} />
           <Route path="/decks/new" element={<RoutePlaceholder title="Create Deck" />} />
           <Route path="/decks/:deckId/study" element={<RoutePlaceholder title="Study" />} />
           <Route path="/decks/:deckId/edit" element={<RoutePlaceholder title="Edit Deck" />} />
