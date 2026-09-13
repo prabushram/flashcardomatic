@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./Header";
 import NotFound from "./NotFound";
 import Home from "./Home";
+import CreateDeck from "./CreateDeck";
 import { Route, Routes } from "react-router-dom";
 
 function RoutePlaceholder({ title }) {
@@ -19,7 +20,7 @@ function Layout() {
       <div className="container">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/decks/new" element={<RoutePlaceholder title="Create Deck" />} />
+          <Route path="/decks/new" element={<CreateDeck />} />
           <Route path="/decks/:deckId/study" element={<RoutePlaceholder title="Study" />} />
           <Route path="/decks/:deckId/edit" element={<RoutePlaceholder title="Edit Deck" />} />
           <Route
