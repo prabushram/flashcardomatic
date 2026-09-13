@@ -14,7 +14,7 @@
   "cards": [
     {
       "id": 1,
-      "front": "Differentiate between Real DOM and Virtual DOM.",
+      "front": "Differentiate between Real DOM and Virtual DOMs.",
       "back": "Virtual DOM updates are faster but do not directly update the HTML",
       "deckId": 1
     },
@@ -41,6 +41,12 @@
       "back": "Renders the first matching child <Route> ",
       "deckId": 2,
       "id": 5
+    },
+    {
+      "front": "test",
+      "back": "testy",
+      "deckId": 1,
+      "id": 6
     }
   ]
 }
