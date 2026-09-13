@@ -10,14 +10,6 @@ import EditCard from "./EditCard";
 import Study from "./Study";
 import { Route, Routes } from "react-router-dom";
 
-function RoutePlaceholder({ title }) {
-  return (
-    <main>
-      <h2>{title}</h2>
-    </main>
-  );
-}
-
 function Layout() {
   return (
     <>
