@@ -3,6 +3,7 @@ import Header from "./Header";
 import NotFound from "./NotFound";
 import Home from "./Home";
 import CreateDeck from "./CreateDeck";
+import Deck from "./Deck";
 import { Route, Routes } from "react-router-dom";
 
 function RoutePlaceholder({ title }) {
@@ -31,7 +32,7 @@ function Layout() {
             path="/decks/:deckId/cards/:cardId/edit"
             element={<RoutePlaceholder title="Edit Card" />}
           />
-          <Route path="/decks/:deckId" element={<RoutePlaceholder title="Deck" />} />
+          <Route path="/decks/:deckId" element={<Deck />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
